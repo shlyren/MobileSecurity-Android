@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:background="#8866ff00"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:text="功能列表"/>
+
+    <!--
+    singleLine: 一行显示
+    ellipsize:
+        none: 省略后面的
+        start: 隐藏前面的文字
+        middle: 隐藏中间的问题
+        end: 隐藏后面的问题
+        marquee: 滚动
+    focusableInTouchMode : 触摸获取焦点
+    focusable: 是否获取焦点
+    marqueeRepeatLimit: 一直滚动
+    -->
+    <com.shlyren.custom.HomeScrolTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="360安全手机, 保护您的手机安全, 360度无死角全面保护你的手机"
+        android:padding="5dp"
+        android:textSize="17sp"
+        android:maxLines="1"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:ellipsize="marquee"
+        android:focusableInTouchMode="true"
+        />
+
+
+    <GridView
+        android:id="@+id/gv_home_gridView"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:verticalSpacing="10dp"
+        android:numColumns="3"
+        android:layout_height="wrap_content">
+
+
+
+    </GridView>
+
+
+
+
+
+
+</LinearLayout>
