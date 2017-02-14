@@ -36,8 +36,6 @@
             android:textSize="16sp"
             android:text="关闭提示更新"/>
 
-
-
         <CheckBox
             android:id="@+id/cb_setting_update"
             android:layout_width="wrap_content"

@@ -11,7 +11,7 @@ import java.security.NoSuchAlgorithmException;
 
 public final class MD5 {
 
-    private MD5() {
+    public MD5(String pwd_str) {
     }
 
     private static final char hexDigits[] =

@@ -32,6 +32,27 @@
         <activity android:name=".SettingActivity">
 
         </activity>
+        <activity android:name=".LossFindActivity">
+
+        </activity>
+
+        <activity android:name=".BaseSetupActivity">
+
+        </activity>
+
+        <activity android:name=".LossFindSetup1Activity">
+
+        </activity>
+        <activity android:name=".LossFindSetup2Activity">
+
+        </activity>
+
+        <activity android:name=".LossFindSetup3Activity">
+
+        </activity>
+        <activity android:name=".LossFindSetup4Activity">
+
+        </activity>
     </application>
 
 </manifest>
