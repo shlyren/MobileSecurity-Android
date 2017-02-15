@@ -43,6 +43,7 @@
         <activity android:name=".LossFindSetup2Activity"> </activity>
         <activity android:name=".LossFindSetup3Activity"> </activity>
         <activity android:name=".LossFindSetup4Activity"> </activity>
+        <activity android:name=".ContactActivity"> </activity>
 
         <receiver android:name="com.shlyren.tools.BootCompleteReceiver">
             <!--priority优先级 值越大优先级越高-->

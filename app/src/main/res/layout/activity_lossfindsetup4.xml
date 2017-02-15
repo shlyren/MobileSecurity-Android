@@ -13,6 +13,7 @@
 
 
     <CheckBox
+        android:id="@+id/cb_setup_protected"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="您还没有开启防盗保护"/>

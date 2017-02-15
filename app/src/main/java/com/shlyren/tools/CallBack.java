@@ -7,8 +7,11 @@ package com.shlyren.tools;
 public interface CallBack {
 
     // 网路请求回调
-    interface HttpCallBack extends CallBack {
-        public void complition(Boolean success, Object result);
+    interface HttpCallBack {
+        /**
+         * 请求完成时调用
+         */
+        void complition(Boolean success, Object result);
     }
 
 }

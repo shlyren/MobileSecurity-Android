@@ -5,11 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import com.shlyren.tools.ContactEngine;
-
-import java.util.HashMap;
-import java.util.List;
-
 /**
  * Created by yuxiang on 2017/2/14.
  */
@@ -28,9 +23,7 @@ public class LossFindSetup3Activity extends BaseSetupActivity {
     // 选择联系人
     public void choose_contact(View view) {
 
-        List<HashMap<String, String>> allContactInfo = ContactEngine.getAllContactInfo(this);
-
-        System.out.println("allContactInfo" + allContactInfo);
+        startActivity(new Intent(this, ContactActivity.class));
 
     }
 

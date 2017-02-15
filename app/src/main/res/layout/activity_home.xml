@@ -47,8 +47,6 @@
         android:numColumns="3"
         android:layout_height="wrap_content">
 
-
-
     </GridView>
 
 
