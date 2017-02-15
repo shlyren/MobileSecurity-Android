@@ -2,6 +2,13 @@ package com.shlyren.mobilesecurity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
+
+import com.shlyren.tools.ContactEngine;
+
+import java.util.HashMap;
+import java.util.List;
 
 /**
  * Created by yuxiang on 2017/2/14.
@@ -13,15 +20,19 @@ public class LossFindSetup3Activity extends BaseSetupActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_lossfindsetup3);
+        EditText safe_code = (EditText) findViewById(R.id.safe_code);
+
+
     }
 
-//    public void nexttip(View view) {
-//
-//    }
-//    public void lasttip(View view) {
-//
-//
-//    }
+    // 选择联系人
+    public void choose_contact(View view) {
+
+        List<HashMap<String, String>> allContactInfo = ContactEngine.getAllContactInfo(this);
+
+        System.out.println("allContactInfo" + allContactInfo);
+
+    }
 
     @Override
     public void next_activity() {

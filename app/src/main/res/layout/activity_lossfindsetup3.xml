@@ -31,12 +31,14 @@
 
 
     <EditText
+        android:id="@+id/safe_code"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="请输入安全号码"/>
 
     <Button
 
+        android:onClick="choose_contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="选择联系人"/>

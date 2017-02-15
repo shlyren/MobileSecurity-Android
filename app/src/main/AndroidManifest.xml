@@ -9,6 +9,9 @@
     <uses-permission android:name="android.permission.CALL_PHONE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
 
     <application
         android:allowBackup="true"
@@ -32,27 +35,21 @@
         <activity android:name=".SettingActivity">
 
         </activity>
-        <activity android:name=".LossFindActivity">
+        <activity android:name=".LossFindActivity"> </activity>
 
-        </activity>
+        <activity android:name=".BaseSetupActivity"> </activity>
 
-        <activity android:name=".BaseSetupActivity">
+        <activity android:name=".LossFindSetup1Activity"> </activity>
+        <activity android:name=".LossFindSetup2Activity"> </activity>
+        <activity android:name=".LossFindSetup3Activity"> </activity>
+        <activity android:name=".LossFindSetup4Activity"> </activity>
 
-        </activity>
-
-        <activity android:name=".LossFindSetup1Activity">
-
-        </activity>
-        <activity android:name=".LossFindSetup2Activity">
-
-        </activity>
-
-        <activity android:name=".LossFindSetup3Activity">
-
-        </activity>
-        <activity android:name=".LossFindSetup4Activity">
-
-        </activity>
+        <receiver android:name="com.shlyren.tools.BootCompleteReceiver">
+            <!--priority优先级 值越大优先级越高-->
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

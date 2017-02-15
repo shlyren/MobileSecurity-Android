@@ -34,7 +34,8 @@
         android:layout_marginTop="10dp"
         android:layout_height="wrap_content">
     <TextView
-        android:id="@+id/tv_setting_title"
+        android:id="@+id/tv_banding_title"
+        android:onClick="banding_sim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
@@ -43,8 +44,8 @@
         android:text="点击绑定SIM卡"/>
 
     <TextView
-        android:id="@+id/tv_setting_dsc"
-        android:layout_below="@id/tv_setting_title"
+        android:id="@+id/tv_banding_sim"
+        android:layout_below="@+id/tv_banding_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="5dp"
@@ -52,7 +53,8 @@
         android:text="SIM卡未绑定"/>
 
     <CheckBox
-        android:id="@+id/cb_setting_update"
+        android:id="@+id/cb_banding_sim"
+        android:clickable="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -62,6 +64,7 @@
         android:layout_margin="5dp"
         android:gravity="center_vertical"/>
     </RelativeLayout>
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
